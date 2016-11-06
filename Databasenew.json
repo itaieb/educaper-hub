@@ -1,0 +1,238 @@
+{
+	"universities": [
+	{
+		"universityID": "123456",
+		"universityName": "oyzegin",
+		"faculties": [
+			{
+				"facultyID": "123156",
+				"facultyName": "engineering",
+				"departments": [
+					
+					{"departmentId": "111111"},
+					{"departmentId": "111111"},
+					{"departmentId": "111111"}
+				
+			    ]
+			},
+			{
+				"facultyID": "123156",
+				"facultyName": "engineering2",
+				"departments": [
+					
+					{"departmentId": "111111"},
+					{"departmentId": "111111"},
+					{"departmentId": "111111"}
+					
+			    ]
+			}
+		],
+		"departments": [
+			{
+				"facultyID": "123456",
+				"departmentID": "000000",
+				"departmentName": "architecture",
+				"courses": [
+					{"courseID": "archi101"},
+					{"courseID": "archi201"},
+					{"courseID": "archi301"}
+				]
+			},
+			{
+				"facultyID": "123456",
+				"departmentID": "000000",
+				"departmentName": "architecture",
+				"courses": [
+					{"courseID": "archi101"},
+					{"courseID": "archi201"},
+					{"courseID": "archi301"}
+				]
+			}
+		],
+		"courses": [
+			{
+				"departmentID": "12345",
+				"courseID": "archi101",
+				"courseCredit": "30",       /*it shows the importance of the course*/
+				"courseDifficulty": 3,
+				"courseType": 2,            /*higher vs lower courses*/
+				"subjectArea": 1,           /*humanities vs engineering courses*/
+				"courseSections": [
+					{"sectionID": "archi101_1"},
+					{"sectionID": "archi101_2"},
+					{"sectionID": "archi101_3"}
+				]
+			},
+				{
+				"departmentID": "12345",
+				"courseID": "art101",
+				"courseCredit": "30",
+				"courseDifficulty": 3,
+				"courseType": 2,
+				"subjectArea": 1,
+				"courseSections": [
+					{"sectionID": "art101_1"},
+					{"sectionID": "art101_2"},
+					{"sectionID": "art101_3"}
+				]
+			},
+		],
+		"courseSections": [
+			{
+				"courseID": "archi101",
+				"courseSectionID": "archi101_1",
+				"sectionTitle": "archiIntro",
+				"instructorID": "123456",
+				"enrollements": [
+					{"studentID": "123456"},
+					{"studentID": "123456"},
+					{"studentID": "123456"}
+				],
+				"classSize": "50",
+				"classTimeID": "555555",
+				"attendance": [
+					{"studentID": "1234567"}     /* to do */
+					
+				],
+				"performanceIndexes": ""
+			},	
+		],
+		"users": [
+			{
+				"administrators": {
+					"userID": "123456",
+					"userName": "name",
+					"departement": "presidance", /* see if we use just the ID of (department/faculty/center of learning) */
+					"userPosition": "rector"      
+				},
+				"instructors": {
+					"departementID": "123456",
+					"instructorID": "123456",
+					"instructorName": "name",
+					"instructorGender": 0,
+					"instructorPersonalityTraits": {
+					   "Agreableness": 4,
+                       "consientiousness": 5,
+                       "extraversion": 5,
+                       "neuroticism": 3,
+                       "openess": 1
+					},
+					"timePreference": 0,  /*to do*/
+					"taughtCourses": [
+						"archi101",
+						"art101",
+						"archi201"
+					],
+					"performanceIndexes": {    /*general performance indexes*/
+						"index1": 55,
+						"index2": 60,
+					    "index3": 55,
+						"index4": 60,
+						"index5": 55,
+						"index6": 70
+					},
+					"interactionWithLms": 80,     /*to do*/
+					"instructorFeedbacks": ""     /*to do*/
+				},
+				"students": {
+					"studentID": "123456",
+					"studentName": "name",
+					"studentGender": 0,
+					"departmentID": "123456",
+					"StudentpersonalityTraits": {
+					   "Agreableness": 4,
+                       "consientiousness": 5,
+                       "extraversion": 5,
+                       "neuroticism": 3,
+                       "openess": 1
+					}, 
+					"satisfactionWithMajor": 3,
+					"timePreference": "",      /* to do*/
+					"enrolledCourses": [
+					{
+						"courseID": "123456",
+						"courseSectionID": "123456",
+						"subjectAbility": "",
+						"engagementWithCourse": ""
+						
+					},
+						{
+						"courseID": "123456",
+						"courseSectionID": "123456",
+						
+					}
+				]
+			}
+	}
+		],
+		"schedule": [
+			{
+				"weekDay": ["Monday"],
+				"startTime": "",
+				"endTime": "",
+				"classes": ["archi101","archi201"]   /* we have to create classtimes IDs*/
+			},
+			{
+				"weekDay": ["Monday"],
+				"startTime": "",
+				"endTime": "",
+				"classes": ["archi101","archi201"]
+			},
+			{
+				"weekDay": ["Monday"],
+				"startTime": "",
+				"endTime": "",
+				"classes": ["archi101","archi201"]
+			}
+		],
+		"attendance": [
+		{
+			"classTimeID": "archi1010",
+			"Students": {
+				"12345": true,    /*student ID a confirmer comment l ecrire*/
+				"25477": true,
+				"12456": true,
+				"22214": false
+			}
+			    
+			}
+		    ]
+		}
+		],
+		"feedbacks": [
+			{
+				"classTimeID": "archi1010",
+				"studentsFeedback": [
+					{
+						"studentID": "123456",
+						"questions": [
+						{
+							"questionID": "1144",
+							"answer": 3,
+						},
+							{
+							"questionID": "1044",
+							"answer": 1,
+						}
+						]
+					},
+					{
+						"studentID": "123456",
+						"questions": [
+						{
+							"questionID": "1144",
+							"answer": 3,
+						},
+							{
+							"questionID": "1044",
+							"answer": 1,
+						}
+						]
+					}
+				]
+				
+			}
+		]
+			
+		}
+]

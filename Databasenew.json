@@ -96,19 +96,22 @@
 					{"studentID": "1234567"}     /* to do */
 					
 				],
-				"performanceIndexes": ""
+				"performanceIndexes": ""   
+			
 			}	
 		],
-		"users": [
-			{
-				"administrators": {
+		"users":[
+				{
 					"userID": "123456",
+					"userType": "administrator",
 					"userName": "name",
 					"departement": "presidance", /* see if we use just the ID of (department/faculty/center of learning) */
 					"userPosition": "rector"      
 				},
-				"instructors": {
+				
+				{
 					"departementID": "123456",
+					"userType": "instructor",
 					"instructorID": "123456",
 					"instructorName": "name",
 					"instructorGender": 0,
@@ -136,8 +139,9 @@
 					"interactionWithLms": 80,     /*to do*/
 					"instructorFeedbacks": ""     /*to do*/
 				},
-				"students": {
+				{
 					"studentID": "123456",
+					"userType": "student",
 					"studentName": "name",
 					"studentGender": 0,
 					"departmentID": "123456",
@@ -149,39 +153,43 @@
                        "openess": 1
 					}, 
 					"satisfactionWithMajor": 3,
-					"timePreference": "",      /* to do*/
+					"timePreference": "",      /* to do */ /* maybe we should devide the day into parts*/
+					"generalData": {
+						"studentAbility": "",      /* we put here the recent calculated results  */
+						"studentEngagement": "",
+						"studentMotivation": ""
+					},
 					"enrolledCourses": [
 					{
 						"courseID": "123456",
 						"courseSectionID": "123456",
 						"subjectAbility": "",
-						"engagementWithCourse": ""
-						
-					},
-						{
-						"courseID": "123456",
-						"courseSectionID": "123456"
-						
+						"engagementWithCourse": "",
+						"attendance": "",    /* to do*/
+						"feedback":""
 					}
+						
 				]
-			}
-	}
-		],
-		"schedule": [
+				}
+				],
+			
+	
+		
+		"schedule": [      /* a reograniser/restructurer/ameliorer */
 			{
-				"weekDay": ["Monday"],
+				"weekDay": "0",  /* Mon=0; tue=1; wed=2; thur=3; fri=4; sat=5; sun=6 */
 				"startTime": "",
 				"endTime": "",
 				"classes": ["archi101","archi201"]   /* we have to create classtimes IDs*/
 			},
 			{
-				"weekDay": ["Monday"],
+				"weekDay": ["0"],
 				"startTime": "",
 				"endTime": "",
 				"classes": ["archi101","archi201"]
 			},
 			{
-				"weekDay": ["Monday"],
+				"weekDay": ["0"],
 				"startTime": "",
 				"endTime": "",
 				"classes": ["archi101","archi201"]
@@ -189,7 +197,8 @@
 		],
 		"attendance": [
 		{
-			"classTimeID": "archi1010",
+			"classID": "archi101",
+			"classTimeID": "",
 			"Students": {
 				"12345": true,    /*student ID a confirmer comment l ecrire*/
 				"25477": true,
@@ -215,26 +224,38 @@
 							"answer": 1
 						}
 						]
-					},
-					{
-						"studentID": "123456",
-						"questions": [
-						{
-							"questionID": "1144",
-							"answer": 3
-						},
-							{
-							"questionID": "1044",
-							"answer": 1
-						}
-						]
 					}
-				]
+					],
+				"performanceIndexes": "",
+				"predictedProblems": ""        /* to do */
+					
 		}
-		
+		],
+		"gpa": [
+			{
+				"studentID": "",
+				"courseID": "",
+				"time": "",
+				"examMark": "75"
+			}
+		],
+		"quiz": [
+			{
+				"studentID": "",
+				"courseID": "",
+				"time": "",
+				"quizMark": "80"
+			}
+		],
+		"homeWork": [
+			{
+				"studentID": "",
+				"courseID": "",
+				"time": "",
+				"homeWorkMark": "80"
+			}
 		]
-		
-				
+						
 			}
 		]
 			

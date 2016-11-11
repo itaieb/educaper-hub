@@ -122,7 +122,7 @@
                        "neuroticism": 3,
                        "openess": 1
 					},
-					"timePreference": 0,  /*to do*/
+					"timePreference": 0,  /*to do*/ 
 					"taughtCourses": [
 						"archi101",
 						"art101",
@@ -232,10 +232,10 @@
 		}
 		],
 		"gpa": [
-			{
+			{ 
 				"studentID": "",
 				"courseID": "",
-				"time": "",
+				"timestamp": "",
 				"examMark": "75"
 			}
 		],
@@ -243,7 +243,8 @@
 			{
 				"studentID": "",
 				"courseID": "",
-				"time": "",
+				"assignementID":"",
+				"timestamp": "",
 				"quizMark": "80"
 			}
 		],
@@ -251,12 +252,13 @@
 			{
 				"studentID": "",
 				"courseID": "",
-				"time": "",
+				"assignementID":"",
+				"timestamp": "",
 				"homeWorkMark": "80"
 			}
 		]
 						
 			}
-		]
-			
+		],
+	"questionsLibrary": ""   /*to do*/	
 }
